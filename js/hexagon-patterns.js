@@ -1,0 +1,2 @@
+$(window).on('scroll',function(){$(".js-hexagon-pattern").each(function(){if(isScrolledIntoView21('.js-hexagon-pattern')){console.log("inview")
+$(".js-hexagon-pattern").find("svg.hexagon-shape").find(".hexagon").addClass("active")}})});function isScrolledIntoView21(elem){var docViewTop=$(window).scrollTop();var docViewBottom=docViewTop+$(window).height();var elemTop=$(elem).offset().top+100;var elemBottom=elemTop+$(elem).height();return((elemBottom<=docViewBottom)&&(elemTop<=docViewTop))}
